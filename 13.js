@@ -26,4 +26,4 @@ for (let i = 0; i < s.length; i++) {
 return converted;
 }
 
-console.log(romanToInt(["III"]))
+console.log(romanToInt("III"))
