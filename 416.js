@@ -1,11 +1,11 @@
 var canPartition = function(nums) {
-    var add = nums.reduce((a, b) => a + b, 0);
+    var reducer = nums.reduce((a, b) => a + b, 0);
 
-    if (add % 2 !== 0) {
+    if (reducer % 2 !== 0) {
         return false;
     }
-    var half = add / 2; 
-    
+    var half = reducer / 2; 
+
     var dp = [];
 
     dp[0] = true;
@@ -19,3 +19,7 @@ var canPartition = function(nums) {
     
     return dp[half] || false;
 };
+
+console.log(canPartition([5,16,11,6,4,2]))  // true
+
+console.log(canPartition([5,16,11,6,4,2,1])) //false
