@@ -23,3 +23,4 @@ var canPartition = function(nums) {
 console.log(canPartition([5,16,11,6,4,2]))  // true
 
 console.log(canPartition([5,16,11,6,4,2,1])) //false
+
