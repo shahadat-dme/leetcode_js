@@ -15,3 +15,20 @@ var reorderList = function(head) {
     };
 };
 
+// var reorderList = function(head) {
+//     if(head == null || head.next == null || head.next.next == null) return;
+
+//     var last = head.next
+//     var secondlast = head;
+
+//     while ( last.next != null){
+//         last = last.next;
+//         secondlast = secondlast.next
+//     }
+//     var temp = head.next;
+//     head.next = last
+//     last.next = temp
+//     secondlast.next = null;
+
+//     reorderList(temp)
+// }
