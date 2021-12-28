@@ -7,7 +7,7 @@
 // };
 
 var middleNode = function(head) {
-    let first = middle = head;
+    first = middle = head;
     while (first && first.next) {
         first = first.next.next;
         middle = middle.next;
