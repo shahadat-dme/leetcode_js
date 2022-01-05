@@ -9,4 +9,5 @@ var bitwiseComplement = function(n) {
     }).join("");
     return parseInt(bn, 2);
 };
+
 console.log(bitwiseComplement(5))
